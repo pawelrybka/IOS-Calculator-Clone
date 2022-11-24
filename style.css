@@ -11,7 +11,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    gap: 1rem;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: black;
 }
@@ -57,7 +56,7 @@ body{
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(34, 34, 34);
     border-radius: 50%;
 }
 
@@ -78,4 +77,34 @@ body{
     grid-column: span 2;
     width: 106px;
     border-radius: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+    .calculator{
+        width: 90%;
+        border: none;
+        position: absolute;
+        bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .panel{
+        gap: 1.2rem;
+    }
+
+    .operator, .number, .equals, .clear, .percent, .negative {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+
+    .zero{
+        grid-column: span 2;
+        width: 9.2rem;
+    }
+
+    .currentNumber{
+        font-size: 4rem;
+    }
+
 }
